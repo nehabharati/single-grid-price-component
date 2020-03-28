@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <style>
+            body {
+                font-family: "Karla";
+                background-color: #ededed;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .heading{
+                background-color: white;
+                padding-top: 20px;
+                grid-area: 'heading';
+            }
+
+            .description{
+                background-color: #ffa07a;
+                color: white; 
+                grid-area: 'description';
+                padding-bottom: 10px;
+            }
+
+            .subscription{
+                padding-bottom: 20px;
+                background-color: #ff8c69;
+                color: white;  
+                grid-area: 'subscription';
+            }
+
+            .bio {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                width: 50%;
+                max-height: 800px;
+                border-radius: 15px;
+                overflow: hidden;
+                perspective: 1px;
+                margin-left: 25%;
+                margin-top: 15%;
+                margin-bottom: 15%;
+            }
+
+            @media only screen and (min-width:600px) {
+                .bio {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    
+                }
+                .heading {
+                    grid-column: span 2;
+                }
+                .btn-primary:hover {
+                    opacity: 0.6;
+                    background-color: #7b51d3;
+                }
+            }
+
+            h1{
+                margin-left: 30px;
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 30px;
+            }        
+            
+            h3,p{
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .piece{
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 10px;
+                font-weight: normal;
+                font-size: 15px;
+            }
+
+            .dollar{
+                font-size : 30px; 
+                margin-bottom: 100px;
+            }
+
+            .btn-primary {
+                background-color: #7b51d3;
+            }
+
+            .btn-primary:hover {
+                    opacity: 0.6;
+                    background-color: #7b51d3;
+            }
+
+            a:link{
+                color: white;
+                font-style: bold;
+                font-size: 15px;
+                font-family: "Karla";
+                font-style: bold;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <div class = "bio">
+            <div class = "heading">
+                <h1 style="color:#ff8c69">Join Our Community</h1>
+                <h1 style="color:#7b51d3">30-day,hassle-free money back guarantee</h1>
+                <p style="color:gray">Gain access to our full library of tutorials along with expert code reviews. </br>
+                Perfect for any developers who are serious about honing their skills</p>
+            </div>
+            <div class = "subscription">
+                    <h3>Monthly Subscription</br><span class = "dollar">$29</span> <span class = "piece">per month</span></h3>
+                    <p>Full access for less than $1 per day</p>   
+                    <div class="col-md-6 col-lg-12">
+                        <button class="btn btn-primary  btn-block"><a href="#" style = "text-decoration: none; color: white;">Sign up</a></button>
+                    </div>                     
+            </div>
+            <div class = "description">
+                <h3>Why Us</h3>
+                <p>Tutorials by Industry experts</br>Peer & expert code review</br>Coding Exercises</br>Access to out Github repos</p>
+            </div>
+        </div>
+    </body>
+</html>
